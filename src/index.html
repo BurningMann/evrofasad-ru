@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  @@include('./partials/head.html')
+  <body>
+    @@include('./partials/header.html')
+    <div class="main_banner section">
+      <img src="./img/banner-1.png" class="main_banner__image fit">
+      <div class="container">
+        <div class="main_banner__content">
+          <span class="main_banner__title">
+            Заказывайте <br>окна не выходя <br>из дома <br>
+            <span class="light_blue">со скидкой 55%</span>
+          </span>
+          <p class="main_banner__text">Окна REHAU от производителя по лучшей цене — <span class="light_blue">от 2 660 ₽/м²</span></p>
+          <a href="#" class="btn">рассчитать стоимость</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      @@include('./partials/advantages.html')
+      <div class="section section--background">
+        <div class="container">
+          @@include('./partials/about-section.html')
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          @@include('./partials/glazing.html')
+        </div>
+      </div>
+
+      <div class="section">
+          @@include('./partials/froze-form.html')
+      </div>
+      <div class="section">
+        <div class="container">
+          @@include('./partials/links-section.html')
+        </div>
+      </div>
+      <div class="section window_map_section">
+        <div class="container">
+          <div class="title_wrapper"><span class="title">дома, где уже стоят наши окна! </span></div>
+          <div class="window_map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa776f10abc461892f3a948279c8f05864156c8aecac550c514a78c3dd58e334f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="section section--width_slider">
+        <div class="container">
+          @@include('./partials/examples.html')
+        </div>
+      </div>
+      <div class="section section--background section--background_small section--width_slider">
+        <div class="container">
+          @@include('./partials/reviews.html')
+        </div>
+      </div>
+      <div class="section section--width_slider">
+        <div class="container">
+          @@include('./partials/video-reviews.html')
+        </div>
+      </div>
+      <div class="section section--no_margin">
+        @@include('./partials/consultation-form.html')
+      </div>
+    </main>
+
+    @@include('./partials/footer.html')
+  </body>
+</html>
+
+

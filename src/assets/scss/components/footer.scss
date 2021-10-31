@@ -1,0 +1,80 @@
+.footer{
+  color: $mainBlue;
+  padding: 55px 0 50px;
+  &__main{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:1024px){
+      flex-direction: column;
+    }
+  }
+  &__logo{
+    margin-right: 60px;
+    flex-shrink: 0;
+    @media screen and (max-width:1024px){
+      margin: 0;
+    }
+    @media screen and (max-width:500px){
+      width: 150px;
+    }
+  }
+  &__menu{
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    a{
+      color: $mainBlue;
+      padding-right: 70px;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+    @media screen and (max-width:1024px){
+      flex-direction: column;
+      margin: 30px 0 50px;
+      width: 100%;
+    }
+  }
+  &__contacts{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    .social{
+      margin-bottom: 15px;
+      a{
+        margin-right: 15px;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+    .phone{
+      font-weight: 600;
+      font-size: 16px;
+      color: $mainBlue;
+      margin-top: 15px;
+    }
+    @media screen and (max-width:1024px){
+      width: 100%;
+    }
+    @media screen and (max-width:500px){
+      width: max-content;
+      .social{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+      .geo{
+        display: none;
+      }
+    }
+  }
+  &__bottom{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+  }
+}
